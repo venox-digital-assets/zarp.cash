@@ -7,9 +7,12 @@
   "author": "Kenny Inggs <kenny.inggs@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "browser-sync": "^2.26.14",
     "http-server": "^0.12.3"
   },
   "scripts": {
-    "start": "http-server ./ -p 3000"
-  }
+    "start": "http-server ./ -p 3000",
+    "dev": "browser-sync start -s -f . --no-notify --port 3000"
+  },
+  "dependencies": {}
 }
